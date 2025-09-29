@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobaLink | Conexão. Oportunidade. Ação.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta de Cores da LOGO JOBALINK (Circular/Entrelaçado) */
+        :root {
+            --primary-blue: #0070F3; /* Azul Claro e Brilhante */
+            --accent-orange: #FF7000; /* Laranja Puro e Forte */
+            --dark-text: #1A1A1A; /* Quase preto para alto contraste (Tipografia) */
+            --light-bg: #FFFFFF; /* Fundo Branco Limpo */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+        }
+        .text-jobalink-blue {
+            color: var(--primary-blue);
+        }
+        .text-jobalink-orange {
+            color: var(--accent-orange);
+        }
+        .bg-jobalink-blue {
+            background-color: var(--primary-blue);
+        }
+        .bg-jobalink-orange {
+            background-color: var(--accent-orange);
+        }
+        .text-dark-text {
+            color: var(--dark-text);
+        }
+        .border-jobalink-blue {
+            border-color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Cabeçalho (Header) -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold flex items-center">
+                <!-- ======================================================= -->
+                <!-- PONTO DE ATENÇÃO: LOGO REAL -->
+                <!-- A imagem 'logo.png' DEVE estar na mesma pasta que este ficheiro HTML para funcionar localmente. -->
+                <!-- MUDANÇA: Aumentado de w-8 h-8 para w-10 h-10 -->
+                <!-- ======================================================= -->
+                <img id="logo-img" src="1.jpg" alt="JobaLink Logo" class="w-20 h-20 mr-2" />
+                
+                <span class="text-dark-text font-black">Joba</span><span class="text-jobalink-blue font-black">Link</span>
+            </h1>
+            <nav class="hidden md:block space-x-3">
+                <a href="#como-funciona" class="text-dark-text hover:text-jobalink-orange px-3 py-2 rounded-md font-medium transition duration-150">Como Funciona</a>
+                <a href="#beneficios" class="text-dark-text hover:text-jobalink-orange px-3 py-2 rounded-md font-medium transition duration-150">Benefícios</a>
+                <a href="#junta-te" class="bg-jobalink-orange text-white px-4 py-2 rounded-full font-semibold ml-4 hover:bg-orange-600 transition duration-150 shadow-lg shadow-orange-300/50">Entrar</a>
+            </nav>
+            <!-- Botão Mobile (Menu) - Oculto para simplificação -->
+        </div>
+    </header>
+
+    <!-- Secção Hero (Destaque Principal) -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
+        <div class="lg:w-3/4 mx-auto">
+            <span class="text-jobalink-orange font-bold text-lg uppercase tracking-widest">MOÇAMBIQUE | CONEXÃO DIGITAL</span>
+            <h2 class="text-5xl md:text-7xl font-extrabold mt-3 leading-tight text-dark-text">
+                O teu <span class="text-jobalink-blue">talento</span> <br class="hidden sm:inline"/> faz a <span class="text-jobalink-orange">ligação</span> com a oportunidade.
+            </h2>
+            <p class="mt-6 text-xl text-gray-700 font-medium">
+                JobaLink:Conexão. Oportunidade. Ação. Constrói a tua carreira com autonomia e visibilidade no mercado.
+            </p>
+            <div class="mt-12 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="bg-jobalink-blue text-white px-10 py-4 rounded-xl font-extrabold text-lg hover:bg-blue-700 transition duration-200 shadow-2xl shadow-blue-400/50 transform hover:scale-105">
+                    Faço alguns Jobas!
+                </a>
+                <a href="#" class="bg-white border-2 border-jobalink-orange text-jobalink-orange px-10 py-4 rounded-xl font-extrabold text-lg hover:bg-gray-50 transition duration-200 shadow-lg transform hover:scale-105">
+                    Preciso de um Link
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Secção Como Funciona (How It Works) -->
+    <section id="como-funciona" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-extrabold text-center mb-16 text-dark-text">
+                Como é que o <span class="text-jobalink-blue">JobaLink</span> te faz avançar?
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Passo 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-jobalink-orange text-center transform hover:translate-y-[-5px] transition duration-300">
+                    <span class="text-6xl font-black text-jobalink-orange">1</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-2 text-dark-text">Cria o Teu Perfil</h3>
+                    <p class="text-gray-600 font-medium">Usa a nossa ferramenta de IA para construir um portefólio que vende. Mostra o teu valor e define o teu preço.</p>
+                </div>
+                <!-- Passo 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-jobalink-blue text-center transform hover:translate-y-[-5px] transition duration-300">
+                    <span class="text-6xl font-black text-jobalink-blue">2</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-2 text-dark-text">cria o teu Link</h3>
+                    <p class="text-gray-600 font-medium">Clientes reais e verificados encontram-te. Agendamento e comunicação segura, diretamente na plataforma.</p>
+                </div>
+                <!-- Passo 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-b-4 border-jobalink-orange text-center transform hover:translate-y-[-5px] transition duration-300">
+                    <span class="text-6xl font-black text-jobalink-orange">3</span>
+                    <h3 class="text-2xl font-bold mt-4 mb-2 text-dark-text">Vamos Jobar</h3>
+                    <p class="text-gray-600 font-medium">Conclui o projeto, recebe o pagamento via M-Pesa ou métodos locais e ganha a tua próxima avaliação 5 estrelas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secção Benefícios (Call to Action Secundário) -->
+    <section id="beneficios" class="py-16 md:py-24 bg-jobalink-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+            <h2 class="text-4xl font-extrabold mb-4">
+                O teu talento tem valor. <span class="text-jobalink-orange">Não esperes</span> para começar.
+            </h2>
+            <p class="text-xl opacity-90 mb-10 font-light">
+                JobaLink: Visibilidade e pagamentos seguros. É hora de fazer acontecer.
+            </p>
+            <a href="#junta-te" class="bg-jobalink-orange text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-orange-600 transition duration-200 shadow-xl shadow-orange-500/50 transform hover:scale-105">
+                Quero Jobar!
+            </a>
+        </div>
+    </section>
+
+    <!-- Rodapé (Footer) -->
+    <footer class="py-8 bg-dark-text text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2024 JobaLink. Conexão. Oportunidade. Ação. Feito com talento moçambicano.</p>
+        </div>
+    </footer>
+
+    <script>
+        // FUNÇÃO DE VERIFICAÇÃO PARA DEBUG LOCAL
+        document.addEventListener('DOMContentLoaded', () => {
+            const logo = document.getElementById('logo-img');
+            
+            // Se o elemento existe (o que acontece)
+            if (logo) {
+                // Adiciona um listener para quando a imagem não conseguir carregar
+                logo.onerror = function() {
+                    console.error("ERRO JOBALINK: Não foi possível carregar o logo.");
+                    console.warn(`Verifique se o ficheiro '${logo.src}' existe EXATAMENTE com esse nome e extensão na mesma pasta que o seu ficheiro HTML.`);
+                    console.warn("Se o ficheiro tiver um nome diferente, altere o valor do 'src' no código HTML.");
+                };
+            }
+        });
+    </script>
+
+</body>
+</html>
